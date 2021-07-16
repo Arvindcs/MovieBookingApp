@@ -1,0 +1,6 @@
+framework module Pods_MovieBookingApp {
+  umbrella header "Pods-MovieBookingApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

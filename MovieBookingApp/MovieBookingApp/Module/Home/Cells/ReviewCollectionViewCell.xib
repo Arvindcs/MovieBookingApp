@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Mono-Regular.otf">
+            <string>SFMono-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewCollectionViewCell" id="gTV-IL-0wX" customClass="ReviewCollectionViewCell" customModule="FightClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmn-mx-Tye">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="170"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="av1-CW-G0I" customClass="Profile" customModule="FightClub" customModuleProvider="target">
+                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ojt-Uw-kCb"/>
+                                    <constraint firstAttribute="height" constant="40" id="hVp-41-lIL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arvind" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMP-IY-coB">
+                                <rect key="frame" x="64" y="16" width="55" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK8-iH-SyT">
+                                <rect key="frame" x="212" y="45.5" width="29" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPv-Lf-0r9">
+                                <rect key="frame" x="0.0" y="76" width="308" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Q6d-qR-bQi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEb-90-7sq" customClass="StarRatingView" customModule="FightClub" customModuleProvider="target">
+                                <rect key="frame" x="64" y="45" width="140" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="AP1-IE-MGg"/>
+                                    <constraint firstAttribute="height" constant="20" id="lhi-zo-LvL"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZET-o2-Eoq">
+                                <rect key="frame" x="16" y="85" width="276" height="77"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Really good watch, could watch again, and can recommend.\r\n\r\nThis is full of fun and child-like wonder, with a surprising edge to it as there is an usual amount of violence directly related to the main characters.\r\n\r\nThis has a very wholesome feel to it as it has the romantic aspect of searching for new frontiers and adventures, but not necessarily for romantic relationships.\r\n\r\nThe story does a good job of pacing out the events of the movie allowing for each aspect to take the focus it needs.\r\n\r\nWhile this is a movie about a triatholon, it's a better story about freedom and acceptance.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SFMono-Regular" family="SF Mono" pointSize="8"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="av1-CW-G0I" firstAttribute="leading" secondItem="Vmn-mx-Tye" secondAttribute="leading" constant="16" id="17v-8f-ZNv"/>
+                            <constraint firstItem="av1-CW-G0I" firstAttribute="top" secondItem="Vmn-mx-Tye" secondAttribute="top" constant="16" id="3aZ-AR-Ceb"/>
+                            <constraint firstItem="XPv-Lf-0r9" firstAttribute="top" secondItem="av1-CW-G0I" secondAttribute="bottom" constant="20" id="4v9-1E-7Ci"/>
+                            <constraint firstAttribute="bottom" secondItem="ZET-o2-Eoq" secondAttribute="bottom" constant="8" id="81g-b0-Ggx"/>
+                            <constraint firstItem="ZET-o2-Eoq" firstAttribute="leading" secondItem="Vmn-mx-Tye" secondAttribute="leading" constant="16" id="IBv-0O-guh"/>
+                            <constraint firstItem="LK8-iH-SyT" firstAttribute="leading" secondItem="bEb-90-7sq" secondAttribute="trailing" constant="8" id="Omi-Lf-HRr"/>
+                            <constraint firstAttribute="trailing" secondItem="ZET-o2-Eoq" secondAttribute="trailing" constant="16" id="QL2-Fb-OYe"/>
+                            <constraint firstItem="XPv-Lf-0r9" firstAttribute="leading" secondItem="Vmn-mx-Tye" secondAttribute="leading" id="XI0-YT-Exb"/>
+                            <constraint firstItem="dMP-IY-coB" firstAttribute="top" secondItem="Vmn-mx-Tye" secondAttribute="top" constant="16" id="Y8J-b2-xMs"/>
+                            <constraint firstItem="LK8-iH-SyT" firstAttribute="centerY" secondItem="bEb-90-7sq" secondAttribute="centerY" id="bZp-0m-JsS"/>
+                            <constraint firstItem="ZET-o2-Eoq" firstAttribute="top" secondItem="XPv-Lf-0r9" secondAttribute="bottom" constant="8" symbolic="YES" id="eXx-UI-hpm"/>
+                            <constraint firstAttribute="trailing" secondItem="XPv-Lf-0r9" secondAttribute="trailing" id="jDe-VD-rpJ"/>
+                            <constraint firstItem="bEb-90-7sq" firstAttribute="leading" secondItem="av1-CW-G0I" secondAttribute="trailing" constant="8" symbolic="YES" id="m8h-qf-osy"/>
+                            <constraint firstItem="dMP-IY-coB" firstAttribute="leading" secondItem="av1-CW-G0I" secondAttribute="trailing" constant="8" symbolic="YES" id="mTx-5l-w7z"/>
+                            <constraint firstItem="bEb-90-7sq" firstAttribute="top" secondItem="dMP-IY-coB" secondAttribute="bottom" constant="8" symbolic="YES" id="rez-BM-lgH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Vmn-mx-Tye" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FfO-Aw-iBd"/>
+                <constraint firstItem="Vmn-mx-Tye" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Jl4-Xq-0qY"/>
+                <constraint firstAttribute="bottom" secondItem="Vmn-mx-Tye" secondAttribute="bottom" id="maZ-GW-sKa"/>
+                <constraint firstAttribute="trailing" secondItem="Vmn-mx-Tye" secondAttribute="trailing" id="oZ5-GY-X4l"/>
+            </constraints>
+            <size key="customSize" width="308" height="170"/>
+            <connections>
+                <outlet property="containerView" destination="Vmn-mx-Tye" id="82v-G6-lwY"/>
+                <outlet property="personImageView" destination="av1-CW-G0I" id="yrE-CZ-4IW"/>
+                <outlet property="personNameLabel" destination="dMP-IY-coB" id="wKc-Iz-Yes"/>
+                <outlet property="ratingDescriptionLabel" destination="ZET-o2-Eoq" id="H0j-50-lz6"/>
+                <outlet property="ratingTextLabel" destination="LK8-iH-SyT" id="NGd-UK-NXe"/>
+                <outlet property="ratingView" destination="bEb-90-7sq" id="Z4A-yN-k4v"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="66.964285714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

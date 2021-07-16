@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Mono-Medium.otf">
+            <string>SFMono-Medium</string>
+        </array>
+        <array key="SF-Mono-Regular.otf">
+            <string>SFMono-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CastCollectionViewCell" id="gTV-IL-0wX" customClass="CastCollectionViewCell" customModule="FightClub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4C-fB-hBS">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yx1-CS-3Vx" customClass="LineView" customModule="FightClub" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="4" height="200"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="eIR-c0-Avo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXg-yo-Ymk" customClass="Profile" customModule="FightClub" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="58" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="CKb-76-GmM"/>
+                                    <constraint firstAttribute="height" constant="64" id="VB4-rP-C7r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderAlpha">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arvind Patel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFm-nD-Mix">
+                                <rect key="frame" x="16" y="96" width="132" height="43"/>
+                                <fontDescription key="fontDescription" name="SFMono-Regular" family="SF Mono" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T8-Th-aXN">
+                                <rect key="frame" x="16" y="146" width="132" height="17"/>
+                                <fontDescription key="fontDescription" name="SFMono-Medium" family="SF Mono" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5T8-Th-aXN" secondAttribute="trailing" constant="12" id="CFt-1p-FC1"/>
+                            <constraint firstItem="yx1-CS-3Vx" firstAttribute="height" secondItem="f4C-fB-hBS" secondAttribute="height" id="Kou-Si-D32"/>
+                            <constraint firstItem="5T8-Th-aXN" firstAttribute="leading" secondItem="yx1-CS-3Vx" secondAttribute="trailing" constant="12" id="LhN-CR-rvm"/>
+                            <constraint firstItem="TXg-yo-Ymk" firstAttribute="leading" secondItem="yx1-CS-3Vx" secondAttribute="trailing" constant="12" id="aI7-80-OhX"/>
+                            <constraint firstItem="yx1-CS-3Vx" firstAttribute="top" secondItem="f4C-fB-hBS" secondAttribute="top" id="b4G-Js-QTO"/>
+                            <constraint firstAttribute="trailing" secondItem="CFm-nD-Mix" secondAttribute="trailing" constant="12" id="hO7-8g-5eO"/>
+                            <constraint firstItem="5T8-Th-aXN" firstAttribute="top" secondItem="CFm-nD-Mix" secondAttribute="bottom" constant="7" id="rqR-7H-1Mw"/>
+                            <constraint firstItem="CFm-nD-Mix" firstAttribute="leading" secondItem="yx1-CS-3Vx" secondAttribute="trailing" constant="12" id="too-ey-bQa"/>
+                            <constraint firstItem="TXg-yo-Ymk" firstAttribute="top" secondItem="f4C-fB-hBS" secondAttribute="top" constant="20" id="vIa-3a-sQA"/>
+                            <constraint firstItem="yx1-CS-3Vx" firstAttribute="leading" secondItem="f4C-fB-hBS" secondAttribute="leading" id="wrh-22-orf"/>
+                            <constraint firstItem="CFm-nD-Mix" firstAttribute="top" secondItem="TXg-yo-Ymk" secondAttribute="bottom" constant="12" id="x0N-r5-zZD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="f4C-fB-hBS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8SY-31-vsn"/>
+                <constraint firstAttribute="trailing" secondItem="f4C-fB-hBS" secondAttribute="trailing" id="cbf-hm-6Wh"/>
+                <constraint firstItem="f4C-fB-hBS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nHL-0r-9Sx"/>
+                <constraint firstAttribute="bottom" secondItem="f4C-fB-hBS" secondAttribute="bottom" id="x0r-zd-wdi"/>
+            </constraints>
+            <connections>
+                <outlet property="actorCharacterLabel" destination="5T8-Th-aXN" id="xL8-iL-aGf"/>
+                <outlet property="actorImageView" destination="TXg-yo-Ymk" id="MZz-iJ-7no"/>
+                <outlet property="actorNameLabel" destination="CFm-nD-Mix" id="Dx1-hw-3V2"/>
+                <outlet property="containerView" destination="f4C-fB-hBS" id="zNU-Yg-71B"/>
+                <outlet property="lineView" destination="yx1-CS-3Vx" id="MRJ-Wd-3LB"/>
+            </connections>
+            <point key="canvasLocation" x="-178.2608695652174" y="89.732142857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
