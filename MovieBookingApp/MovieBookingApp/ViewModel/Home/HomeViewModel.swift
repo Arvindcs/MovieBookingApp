@@ -12,8 +12,8 @@ struct HomeViewModel {
     }
     
     //MARK: Variable
-    var nowPlayingMovies: BoxBind<[MovieViewModel]?> = BoxBind([MovieViewModel](repeating: MovieViewModel(meta: nil), count: 5))
-    var filteredMovies: BoxBind<[MovieViewModel]?> = BoxBind([MovieViewModel](repeating: MovieViewModel(meta: nil), count: 0))
+    var nowPlayingMovies: Binding<[MovieViewModel]?> = Binding([MovieViewModel](repeating: MovieViewModel(meta: nil), count: 5))
+    var filteredMovies: Binding<[MovieViewModel]?> = Binding([MovieViewModel](repeating: MovieViewModel(meta: nil), count: 0))
     
     public var defaultsManager: UserDefaultsManager
     public var networkManager: NetworkManager

@@ -6,8 +6,8 @@ struct DetailsViewModel {
     let defaultsManager: UserDefaultsManager
     let networkManager: NetworkManager
     
-    var movieDetails: BoxBind<MovieDetails?> = BoxBind(nil)
-    var moviePosterImage: BoxBind<UIImage?> = BoxBind(nil)
+    var movieDetails: Binding<MovieDetails?> = Binding(nil)
+    var moviePosterImage: Binding<UIImage?> = Binding(nil)
     let movieId: Int
     let moviePosterPath: String
     
@@ -35,7 +35,7 @@ struct DetailsViewModel {
         if (fileHandler.checkIfFileExists(id: movieId)) {
             self.moviePosterImage.value = UIImage(contentsOfFile: fileHandler.getPathForImage(id: self.movieId).path)
         } else {
-            guard let url = URL(string: "\(APIs.imageBaseString)\(moviePosterPath)") else { return }
+            guard let url = URL(string: "\(Constants.imageBaseString)\(moviePosterPath)") else { return }
             networkManager.downloadMoviePoster(url: url, id: self.movieId) { res, error in
                 if (error == .none) {
                     self.moviePosterImage.value = UIImage(contentsOfFile: fileHandler.getPathForImage(id: movieId).path)

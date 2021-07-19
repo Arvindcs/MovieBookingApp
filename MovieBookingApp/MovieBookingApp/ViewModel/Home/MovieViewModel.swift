@@ -18,9 +18,9 @@ struct MovieViewModel {
     let voteAverage: Double?
     let voteCount: Int?
     
-    var moviePosterImage: BoxBind<UIImage?> = BoxBind(nil)
+    var moviePosterImage: Binding<UIImage?> = Binding(nil)
     var moviePosterUrl: URL {
-        guard let url = URL(string: "\(APIs.imageBaseString)\(self.posterPath ?? "")") else { return URL(string: "")! }
+        guard let url = URL(string: "\(Constants.imageBaseString)\(self.posterPath ?? "")") else { return URL(string: "")! }
         return url
     }
     

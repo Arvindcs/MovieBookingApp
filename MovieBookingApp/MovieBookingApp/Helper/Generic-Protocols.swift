@@ -24,5 +24,5 @@ protocol ComponentShimmers {
 }
 
 class GenericDataSource<T> : NSObject {
-    var data: BoxBind<[T]> = BoxBind([])
+    var data: Binding<[T]> = Binding([])
 }

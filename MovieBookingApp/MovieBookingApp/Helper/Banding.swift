@@ -1,9 +1,8 @@
 
 import Foundation
 
-class BoxBind<T> {
+class Binding<T> {
 
-    
     typealias CompletionHandler = ((T) -> Void)
     typealias Listener = (T) -> ()
     private var observers = [String: CompletionHandler]()

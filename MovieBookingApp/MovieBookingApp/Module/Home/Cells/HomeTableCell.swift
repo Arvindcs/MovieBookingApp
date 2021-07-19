@@ -39,13 +39,13 @@ class HomeTableCell: UITableViewCell {
     
     // MARK:- delegate functions for collectionView
     private func hideViews() {
-         ViewAnimationFactory.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
+         ViewAnimationProvider.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
             self.containerView.setOpacity(to: 0)
          }
      }
      
     private func showViews() {
-         ViewAnimationFactory.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
+         ViewAnimationProvider.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
             self.containerView.setOpacity(to: 1)
         }
     }

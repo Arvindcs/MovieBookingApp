@@ -16,13 +16,7 @@ enum APIs: URLRequestConvertible  {
     case getSimilarMovies(id: Int)
     case getCredits(id: Int)
     case getReviews(id: Int)
-    
-    // MARK: variables
-    static let endpoint = URL(string: "https://api.themoviedb.org/3")!
-    static let apiKey = "3684dfb677b30f70e0d6c0797ba208bd"
-    static let imageBaseString = "https://image.tmdb.org/t/p/w500/"
-    
-    
+ 
     // MARK:  URL path
     var path: String {
         switch self {
@@ -54,10 +48,10 @@ enum APIs: URLRequestConvertible  {
     }
     
     func asURLRequest() throws -> URLRequest {
-        let url = "\(Self.endpoint.absoluteString)\(path)"
+        let url = "\(Constants.endpoint.absoluteString)\(path)"
         var request = URLRequest(url: URL(string: url)!)
         var parameters = Parameters()
-        parameters["api_key"] = APIs.apiKey
+        parameters["api_key"] = Constants.apiKey
         addApiHeaders(request: &request)
         request = try encoding.encode(request, with: parameters)
         return request

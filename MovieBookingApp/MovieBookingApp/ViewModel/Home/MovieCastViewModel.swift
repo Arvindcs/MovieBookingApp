@@ -16,7 +16,7 @@ struct MovieCastViewModel {
     let movieName: String
     let movieCast: Cast
 
-    var posterImage: BoxBind<UIImage?> = BoxBind(nil)
+    var posterImage: Binding<UIImage?> = Binding(nil)
     
     // MARK:- initializer for the viewModel
     init(movieCast: Cast?, handler: FileHandler = FileHandler(), networkManager: NetworkManager = NetworkManager()) {
@@ -45,7 +45,7 @@ struct MovieCastViewModel {
         if (fileHandler.checkIfFileExists(id: id)) {
             self.posterImage.value = UIImage(contentsOfFile: fileHandler.getPathForImage(id: id).path)
         } else {
-            guard let url = URL(string: "\(APIs.imageBaseString)\(imageUrlString)") else { return }
+            guard let url = URL(string: "\(Constants.imageBaseString)\(imageUrlString)") else { return }
             networkManager.downloadMoviePoster(url: url, id: self.id) { res, error in
                 if (error == .none) {
                     self.posterImage.value = UIImage(contentsOfFile: fileHandler.getPathForImage(id: id).path)

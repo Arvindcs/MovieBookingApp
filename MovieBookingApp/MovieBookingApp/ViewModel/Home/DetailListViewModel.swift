@@ -20,10 +20,10 @@ struct DetailListViewModel {
     var offset: Int = 0
     var limit: Int = 5
     
-    var prefetch: BoxBind<Bool> = BoxBind(false)
-    var similarMovies: BoxBind<[SimilarViewModel]?> = BoxBind([SimilarViewModel](repeating: SimilarViewModel(similarMovies: nil), count: 5))
-    var movieCredits: BoxBind<[MovieCastViewModel]?> = BoxBind([MovieCastViewModel](repeating: MovieCastViewModel(movieCast: nil), count: 5))
-    var movieReviews: BoxBind<[MovieReviewViewModel]?> = BoxBind([MovieReviewViewModel](repeating: MovieReviewViewModel(movieReviews: nil), count: 5))
+    var prefetch: Binding<Bool> = Binding(false)
+    var similarMovies: Binding<[SimilarViewModel]?> = Binding([SimilarViewModel](repeating: SimilarViewModel(similarMovies: nil), count: 5))
+    var movieCredits: Binding<[MovieCastViewModel]?> = Binding([MovieCastViewModel](repeating: MovieCastViewModel(movieCast: nil), count: 5))
+    var movieReviews: Binding<[MovieReviewViewModel]?> = Binding([MovieReviewViewModel](repeating: MovieReviewViewModel(movieReviews: nil), count: 5))
     
     // MARK:- initializer for the viewModel
     init(movieId: Int = 0, handler: FileHandler, networkManager: NetworkManager, defaultsManager: UserDefaultsManager) {

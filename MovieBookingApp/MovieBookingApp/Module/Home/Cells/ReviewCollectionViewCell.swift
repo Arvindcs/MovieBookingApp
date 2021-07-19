@@ -43,13 +43,13 @@ class ReviewCollectionViewCell: UICollectionViewCell, ComponentShimmers {
     
     // MARK:- delegate functions for collectionView
     func hideViews() {
-        ViewAnimationFactory.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
+        ViewAnimationProvider.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
             self.containerView.setOpacity(to: 0)
         }
     }
     
     func showViews() {
-        ViewAnimationFactory.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
+        ViewAnimationProvider.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
             self.containerView.setOpacity(to: 1)
         }
     }
